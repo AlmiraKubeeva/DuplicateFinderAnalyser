@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(205,213,255, 255); 
+QPushButton{ color: blue}
+QPushButton {
+	color: rgba(0,0,0,255);
+	background-color: rgba(180,190,255,255) ;
+	border-color :white;
+	border-radius: 2px;
+
+};</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+	border-radius: 5px;
+ 	height: 30px;
+}
+QPushButton {
+	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+	border-radius: 5px;
+ 	height: 30px;
+}
+QLineEdit{
+	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+}
+</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="QPushButton" name="openDirectoryButton">
+       <property name="maximumSize">
+        <size>
+         <width>170</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Открыть директорию</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="currentPath">
+       <property name="maxLength">
+        <number>50000</number>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView">
+      <property name="baseSize">
+       <size>
+        <width>4</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+</string>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>21</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>21</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>50</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>21</number>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="buttons">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 700 9pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+ 	height: 30px;;
+	border-radius: 5px;
+
+};</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>5</number>
+      </property>
+      <widget class="QPushButton" name="deleteDuplicatesButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: rgba(0,0,0,255);
+	background-color: rgba(180,190,255,255) ;
+	border-color :white;
+	border-radius: 2px;
+
+};</string>
+       </property>
+       <property name="text">
+        <string>Удалить дубликаты</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="deleteFilesButton">
+       <property name="text">
+        <string>Удалить файл</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="duplicateShowButton">
+       <property name="text">
+        <string>Показать дубликаты</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="semanticCompareButton">
+       <property name="text">
+        <string>Семантическое сравнение</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DuplicatehideButton">
+       <property name="text">
+        <string>Скрыть дубликаты</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(205,213,255, 255); 
+QPushButton{ color: blue}
+QPushButton {
+	color: rgba(0,0,0,255);
+	background-color: rgba(180,190,255,255) ;
+	border-color :white;
+	border-radius: 2px;
+
+};</string>
+  </property>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>430</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 700 9pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+ 	height: 70px;;
+	border-radius: 5px;
+
+};</string>
+   </property>
+   <property name="text">
+    <string>Понятно</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>641</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="thresh_line">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>450</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+font: 700 9pt &quot;Tahoma&quot;;
+background-color: rgba(200,200,255,255) ;</string>
+   </property>
+   <property name="text">
+    <string>0,80</string>
+   </property>
+   <property name="maxLength">
+    <number>50000</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_button">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>430</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 700 9pt &quot;Tahoma&quot;;
+	color: black;
+	background-color: #B5BAFF ;
+ 	height: 70px;;
+	border-radius: 5px;
+
+};</string>
+   </property>
+   <property name="text">
+    <string>Удалить дубликаты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>430</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 700 8pt &quot;Tahoma&quot;;
+	color: black;
+</string>
+   </property>
+   <property name="text">
+    <string>threshold:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

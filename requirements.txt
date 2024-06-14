@@ -1,0 +1,8 @@
+pyqt6
+scikit-learn
+docx2txt
+PyPDF2
+torch 
+easyocr
+transformers
+pytesseract

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Выбор метода</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+font: 700 9pt &quot;Tahoma&quot;;
+background-color: rgba(205,213,255, 255);  
+}</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>100</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    font: 700 9pt &quot;Tahoma&quot;;
+    color: black; /* Цвет текста */
+    background-color: #B5BAFF; /* Фоновый цвет виджета */
+    border-radius: 5px;
+    height: 30px;
+}
+QComboBox::drop-down {
+    background-color:  rgba(205,213,255, 255);
+    border-radius: 5px;
+	font: 700 9pt &quot;Tahoma&quot;;
+	color: black
+}
+
+QComboBox QAbstractItemView {
+    font: 700 9pt &quot;Tahoma&quot;;
+    color: black;
+    background-color:  rgba(205,213,255, 255);
+    selection-background-color: black; /* Цвет для выбранного элемента */
+    selection-color: black; /* Цвет текста для выбранного элемента */
+    border-radius: 5px;
+    height: 30px;
+}
+QComboBox::item:selected{
+   font: 700 9pt &quot;Tahoma&quot;;
+   color: black;
+	background-color:  white;
+}
+QComboBox:focus {
+    color: black; /* Цвет текста в фокусе */
+    background-color: #B5BAFF; /* Фоновый цвет виджета в фокусе */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+font: 700 9pt &quot;Tahoma&quot;;
+	color: rgba(0,0,0,255);
+	background-color: rgba(180,190,255,255) ;
+	border-color :white;
+	border-radius: 2px;
+
+};</string>
+   </property>
+   <property name="text">
+    <string>Выбрать</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>40</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgba(0,0,0,255);
+border-color :white;
+border-radius: 2px;
+font: 700 9pt &quot;Tahoma&quot;;
+text-align: center</string>
+   </property>
+   <property name="text">
+    <string>Выберите способ анализа</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
